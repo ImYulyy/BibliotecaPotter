@@ -1,5 +1,5 @@
 # BibliotecaPotter
-Acá estarán los códigos con los que estaremos trabajando en Programación web.
+Acá estarán los códigos con los que estaremos trabajando en Programación web. El pryecto fue cambiado durante semana santa por cuestiones diversas.
 
 ## Integrantes
 - De la Paz Bautista Areli Esmeralda 19230318
