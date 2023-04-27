@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/loading.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Login</title>
+</head>
+
+<body class="hidden-loading">
+
+  <!--Loading-->
+
+ 
+  
+  <div class="login-box" style="text-align: center;">
+    
+    <h2>Iniciar Sesión</h2>
+    <form method="POST">
+      <div class="user-box">
+        <input type="text" name="correo" id="correo" required=""
+          value="<?php if(isset($_POST['correo'])) echo $_POST['correo']; ?>">
+        <label>Correo</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="pass" id="pass" required=""
+          value="<?php if(isset($_POST['pass'])) echo $_POST['pass']; ?>">
+        <label>Contraseña</label>
+      </div>
+
+        <p name="DatosInconrrectos" style="margin-bottom: 0px; margin-top: 0px; color: rgb(86, 86, 23);">
+          <?php echo $DatosInconrrectos ?>
+        </p>
+
+      <input type="submit" name="submit" id="submit-btn" required="" value="Enviar" style="display: none;">
+
+      <a href="#" id="custom-submit-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Entrar
+      </a>
+    </form>
+    <br>
+    
+    <div style="text-align: center;">
+
+      <a href="http://localhost/Pluma Mágica de Hogwarts/php/registrarse.php" id="iniciar-sesion">
+        ¿No tienes cuenta?
+      </a>
+    </div>
+
+  </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
