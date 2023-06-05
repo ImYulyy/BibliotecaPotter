@@ -3,7 +3,7 @@
 $host = 'localhost'; // Dirección del servidor de MySQL
 $usuario = 'root'; // Usuario de MySQL
 $contrasena = 'Privado'; // Contraseña de MySQL
-$base_datos = 'id20749484_login'; // Nombre de la base de datos a la que te quieres conectar
+$base_datos = 'login1'; // Nombre de la base de datos a la que te quieres conectar
 
 $conexion = mysqli_connect($host, $usuario, $contrasena, $base_datos);
 
