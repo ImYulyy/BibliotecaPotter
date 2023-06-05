@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\Pluma Mágica de Hogwarts\php\conexion.php';
+require_once '../php/conexion.php';
 
 $cuentaRegistrada = "";
 

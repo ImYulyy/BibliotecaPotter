@@ -1,5 +1,5 @@
 <?php
-require_once 'C:\xampp\htdocs\Pluma Mágica de Hogwarts\php\conexion.php';
+require_once '../php/conexion.php';
 
 $DatosInconrrectos = "";
 
@@ -16,7 +16,7 @@ if(isset($_POST['correo']) && isset($_POST['pass'])) {
 
         if(mysqli_num_rows($result) == 1) {
             // El usuario ha sido encontrado en la base de datos
-            header("Location: /Pluma Mágica de Hogwarts/html/Pluma Mágica de Hogwarts.html");
+            header("Location: https://plumamagicadehogwarts.000webhostapp.com/html/Pluma%20M%C3%A1gica%20de%20Hogwarts.html");
             exit;
         } else {
             // El usuario no existe en la base de datos o las credenciales son incorrectas
@@ -29,9 +29,5 @@ if(isset($_POST['correo']) && isset($_POST['pass'])) {
     }
 }
 
-include 'C:/xampp/htdocs/Pluma Mágica de Hogwarts/html/login-iniciarSesion.html';
+include '../html/login-iniciarSesion.html';
 ?>
-
-<script>
-    
-</script>
